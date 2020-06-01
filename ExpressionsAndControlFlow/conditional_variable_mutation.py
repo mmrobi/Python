@@ -38,13 +38,11 @@ is_bonus = True
 # and is_bonus is false decrement c by 1
 # if is_bonus is true c should remain the same
 
-if credits>=50:
+if credits>=50 and is_bonus is False:
     c-=2
-    is_bonus= False
-elif credits<50:
+elif credits<50 and is_bonus is False:
     c-=1
-    is_bonus= False
-elif is_bonus=True:
+elif is_bonus is True:
     c=c
     
 print(c)
@@ -52,9 +50,10 @@ print(c)
 
 
 
-d = 8
-time = 120
+d = 12
+time = 180
 out3 = ""
+
 # if d is dividable by 4
 # and time is not more than 200
 # set out3 to "check"
@@ -62,5 +61,11 @@ out3 = ""
 # set out3 to "Time out"
 # otherwise set out3 to "Run Forest Run!"
 
-
+if time<=200 and d%4==0:
+    out3="Check!"
+elif time>200:
+    out3="Time out!"
+else:
+    out3="Run Forest Run!"
+    
 print(out3)
