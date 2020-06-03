@@ -5,8 +5,9 @@
 # The stored number is higher
 # The stried number is lower
 # You found the number: 8
+import random
+Num=random.randrange(1,100,1)
 
-Num=13
 x=int(input("Guess the number: "))
 
 while x>Num:
