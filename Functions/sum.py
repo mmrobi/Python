@@ -1,12 +1,12 @@
 # Write a function called `sum` that returns the sum of numbers from zero to the given parameter
-
+x=int(input("Write a number: "))
 
 def Sum(x):
-    for x in range(0,Sum):
-        print(sum(x))
+    sum_ = 0
+    for y in range(x):
+        sum_ += y
+    return sum_
 
-Sum(10)
-    
-
+print(Sum(x))
 
 
