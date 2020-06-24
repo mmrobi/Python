@@ -1,9 +1,9 @@
 a = 24
 out = 0
-out +=1
 # if a is even increment out by one
 if int(a):
-    print(out)
+    out +=1
+print(out)
 
 
 
@@ -13,7 +13,7 @@ if int(a):
 b = 22
 out2 = ""
 
-if 10<b<20:
+if 10<b and b<20:
     out2="Sweet!"
 elif b<10:
     out2="Less!"
@@ -43,7 +43,7 @@ if credits>=50 and  not is_bonus:
 elif credits<50 and  not is_bonus:
     c-=1
 elif is_bonus:
-    c=c
+    
     
 print(c)
 
